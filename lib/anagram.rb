@@ -3,8 +3,8 @@ class Anagram
 attr_accessor :word
 
 
-def initialize(word) #initializing
-  @word = word
+def initialize(anagram) #initializing
+  @anagram = anagram
 end
 
 def parse #parse method
