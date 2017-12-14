@@ -9,6 +9,5 @@ end
 
 def match(array) 
    array.select {|x| x.split("").sort == @name.split("").sort}
- end
-
+ end #split the array into lettors, sort through array elements, checks to see if 2 arrays are equal
 end
