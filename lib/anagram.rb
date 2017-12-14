@@ -1,16 +1,14 @@
 # Your code goes here!
 class Anagram
-attr_accessor :anagram
+attr_accessor :name #creating an attribute accessor
 
 
 def initialize(anagram) #initializing
-  @anagram = anagram
+  @name= anagram
 end
 
-def parse #parse method
-    some_word.split.map do |some_word| #seperates the emails
-      some_word.split("") #by finding spaces or commas
-    end.flatten.uniq #and ensures they are unique
-  end
+def match(array) 
+   array.select {|x| x.split("").sort == @name.split("").sort}
+ end
 
 end
